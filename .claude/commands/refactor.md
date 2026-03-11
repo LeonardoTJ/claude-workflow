@@ -43,7 +43,7 @@ Document in `research.md`:
 
 ## Stage 3 — Plan
 
-Write `docs/plans/<NNN>-<slug>/plan.md` using `templates/plans/_plan.md`.
+Write `docs/plans/<NNN>-<slug>/plan.md` using `assets/plans/_plan.md`.
 
 Each phase must include:
 - Exact files affected

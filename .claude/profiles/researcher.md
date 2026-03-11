@@ -23,7 +23,7 @@ read files outside your declared scope.
 
 ## Required Output
 
-Write findings to the specified path using `templates/plans/_research.md`.
+Write findings to the specified path using `assets/plans/_research.md`.
 
 Your finding must include:
 - Every file examined and the key things learned from it

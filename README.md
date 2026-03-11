@@ -1,26 +1,10 @@
 # claude-workflow
 
-<!-- Workflow template version: 1.0.0 -->
+<!-- Workflow template version: 1.1.0 -->
 
-A set of Claude Code configuration templates that impose a structured,
-document-driven process on AI-assisted engineering sessions — eliminating
-context drift, silent design decisions, and non-resumable sessions.
-
----
-
-## How it works
-
-Every non-trivial task goes through six stages before any code is written:
-
-```
-Research → Plan → Annotate → Todo → Implement → Feedback
-```
-
-Each stage produces a file. The files are the source of truth — not chat
-history. Sessions can be interrupted and resumed on any machine.
-
-The human annotates the plan directly before implementation begins.
-You always decide what gets built.
+A Claude Code skill that eliminates context drift, silent design decisions,
+and non-resumable sessions — by enforcing a document-driven pipeline where
+files are the source of truth, not chat history.
 
 ---
 
@@ -29,13 +13,11 @@ You always decide what gets built.
 ```bash
 # 1. Copy into your project
 cp -r claude-workflow/.claude your-project/
-cp -r claude-workflow/templates your-project/
+cp -r claude-workflow/assets your-project/
 cp    claude-workflow/CLAUDE.md your-project/
 mkdir -p your-project/docs/plans your-project/docs/debug
 
 # 2. Fill in CLAUDE.md — project name, tech stack, lint/test commands
-
-# 3. Start a session in Claude Code
 ```
 
 In Claude Code:
@@ -45,13 +27,14 @@ Session type: FEATURE
 /workflow
 ```
 
-See [docs/onboarding.md](docs/onboarding.md) for the full setup guide.
+See [references/onboarding.md](references/onboarding.md) for the full setup guide.
 
 ---
 
 ## What's included
 
 ```
+SKILL.md            ← skill entry point and overview
 .claude/
   commands/
     workflow.md     ← /workflow  — full planning protocol
@@ -64,16 +47,20 @@ See [docs/onboarding.md](docs/onboarding.md) for the full setup guide.
     implementer.md    ← executes one phase at a time (Sonnet)
     tester.md         ← writes and runs tests (Sonnet)
     documenter.md     ← produces reports and findings (Haiku)
-templates/
+assets/
   plans/
     _research.md    ← research artifact template
     _plan.md        ← implementation plan template
     _todo.md        ← task breakdown template
   debug/
     _finding.md     ← debug finding template
-docs/
+references/
   overview.md       ← design rationale and concepts
   onboarding.md     ← step-by-step setup guide
+evals/
+  trigger-tests.md        ← when should the skill load
+  functional-tests.md     ← stage-by-stage behavioral tests
+  validation-checklist.md ← pre-release compliance checklist
 CLAUDE.md           ← fill in for your project
 ```
 
@@ -81,8 +68,8 @@ CLAUDE.md           ← fill in for your project
 
 ## Documentation
 
-- [Overview](docs/overview.md) — design principles and concepts
-- [Onboarding](docs/onboarding.md) — installation and first session
+- [Overview](references/overview.md) — design principles and concepts
+- [Onboarding](references/onboarding.md) — installation and first session
 
 ---
 

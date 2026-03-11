@@ -25,7 +25,7 @@ a plan that an implementer can execute without making design decisions.
 
 ## Required Output
 
-Write the implementation plan to the specified path using `templates/plans/_plan.md`.
+Write the implementation plan to the specified path using `assets/plans/_plan.md`.
 
 Each phase of the plan must include:
 - Exact file paths affected

@@ -10,7 +10,7 @@ Do not attempt fixes before the root cause is confirmed.
 When this skill fires:
 
 1. **Record the bug slug**: a short kebab-case label for the symptom (e.g. `null-pointer-checkout`)
-2. **Create the finding file**: `docs/debug/YYYY-MM-DD-<slug>.md` using `templates/debug/_finding.md`
+2. **Create the finding file**: `docs/debug/YYYY-MM-DD-<slug>.md` using `assets/debug/_finding.md`
 3. **Fill in Observed Behavior and Expected Behavior** from the user's description before reading any code
 4. **State the finding file path** before proceeding
 

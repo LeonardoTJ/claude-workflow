@@ -17,7 +17,7 @@ From the root of your project:
 ```bash
 # Copy the workflow configuration into your project
 cp -r path/to/claude-workflow/.claude ./
-cp -r path/to/claude-workflow/templates ./
+cp -r path/to/claude-workflow/assets ./
 cp    path/to/claude-workflow/CLAUDE.md ./
 ```
 
@@ -31,7 +31,7 @@ touch docs/plans/.gitkeep docs/debug/.gitkeep
 Commit everything:
 
 ```bash
-git add .claude/ templates/ docs/ CLAUDE.md
+git add .claude/ assets/ docs/ CLAUDE.md
 git commit -m "Add Claude Code workflow templates"
 ```
 
@@ -142,7 +142,7 @@ Check that `CLAUDE.md` contains the Working Protocol section. If it was
 overwritten, restore it from the template.
 
 **Claude can't find the template files.**
-Verify `templates/plans/_research.md`, `_plan.md`, and `_todo.md` exist.
+Verify `assets/plans/_research.md`, `_plan.md`, and `_todo.md` exist.
 Sub-agents reference these paths directly.
 
 **The session was interrupted and context was lost.**

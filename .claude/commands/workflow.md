@@ -31,7 +31,7 @@ When asked to research a topic or feature area:
 - Read all relevant source files thoroughly. Do not skim. Use keywords like
   "deeply" and "in detail" to calibrate reading depth.
 - Write findings to `docs/plans/<NNN>-<slug>/research.md` using the template
-  at `templates/plans/_research.md`
+  at `assets/plans/_research.md`
 - Include: every file examined, key functions and modules, dependencies,
   current behavior, edge cases, and anything surprising or risky
 - Close with an **Open Questions** section for anything that could not be
@@ -46,7 +46,7 @@ When asked to generate an implementation plan:
 
 - Read `research.md` for this task before writing anything
 - Write the plan to `docs/plans/<NNN>-<slug>/plan.md` using the template
-  at `templates/plans/_plan.md`
+  at `assets/plans/_plan.md`
 - Each change must include: exact file path, function signatures, code
   snippets, rationale, tradeoffs considered, and alternatives rejected with reasons
 - Flag all assumptions explicitly
@@ -74,7 +74,7 @@ When asked to generate a todo list:
 
 - Read the approved `plan.md`
 - Write the task breakdown to `docs/plans/<NNN>-<slug>/todo.md` using the
-  template at `templates/plans/_todo.md`
+  template at `assets/plans/_todo.md`
 - Use GFM checkboxes: `- [ ] description`
 - Group tasks into named phases (e.g. Phase 1: Data layer, Phase 2: API)
 - Every task must map to a specific file change or shell command
